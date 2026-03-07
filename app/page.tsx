@@ -26,6 +26,18 @@ function ScholarIcon() {
   );
 }
 
+function GitHubIcon() {
+  return (
+    <svg
+      aria-hidden="true"
+      viewBox="0 0 24 24"
+      className="h-6 w-6 fill-current"
+    >
+      <path d="M12 2C6.48 2 2 6.59 2 12.25c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49 0-.24-.01-.88-.01-1.73-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.9 1.58 2.35 1.12 2.92.86.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.3 9.3 0 0 1 12 7.8c.85 0 1.7.12 2.5.36 1.9-1.33 2.74-1.05 2.74-1.05.55 1.41.21 2.45.11 2.71.64.72 1.03 1.63 1.03 2.75 0 3.95-2.34 4.81-4.57 5.07.36.32.68.94.68 1.9 0 1.38-.01 2.5-.01 2.84 0 .27.18.59.69.49A10.27 10.27 0 0 0 22 12.25C22 6.59 17.52 2 12 2Z" />
+    </svg>
+  );
+}
+
 type SocialLinkProps = {
   href: string;
   label: string;
@@ -68,6 +80,9 @@ export default function Home() {
           </Link>
 
           <nav className="ml-auto hidden items-center gap-4 sm:flex">
+            <SocialLink href="https://github.com/ftuchsch" label="GitHub">
+              <GitHubIcon />
+            </SocialLink>
             <SocialLink
               href="https://www.linkedin.com/in/felix-tuchscherer/"
               label="LinkedIn"
@@ -108,6 +123,9 @@ export default function Home() {
                 </Link>
               </div>
               <div className="mt-4 flex items-center justify-center gap-5">
+                <SocialLink href="https://github.com/ftuchsch" label="GitHub">
+                  <GitHubIcon />
+                </SocialLink>
                 <SocialLink
                   href="https://www.linkedin.com/in/felix-tuchscherer/"
                   label="LinkedIn"
@@ -126,7 +144,7 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="flex min-h-[calc(100vh-84px)] items-start justify-center px-6 pt-16">
+      <main className="flex items-start justify-center px-6 pt-12 pb-6">
         <div className="flex flex-col items-center gap-4 text-center">
           <Image
             src="/headshot.png"
@@ -140,10 +158,21 @@ export default function Home() {
             <h1 className="text-3xl font-semibold tracking-tight text-purple-900">
               Felix Tuchscherer
             </h1>
-            <p className="text-base text-purple-900/80">Boston University</p>
+            <p className="text-base text-purple-900/80">
+              Boston University - Double major in CS & Cell/Mol Bio &apos;27
+            </p>
           </div>
         </div>
       </main>
+
+      <section className="mx-auto w-full max-w-5xl px-6 pb-20">
+        <div className="max-w-3xl text-left text-purple-900">
+          <h2 className="text-2xl font-semibold tracking-tight">About</h2>
+          <p className="mt-4 text-base leading-7 text-purple-900/80">
+            Work in progress!
+          </p>
+        </div>
+      </section>
     </div>
   );
 }
