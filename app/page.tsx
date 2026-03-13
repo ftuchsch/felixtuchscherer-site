@@ -165,7 +165,7 @@ export default function Home() {
         </div>
       </main>
 
-      <section className="mx-auto w-full max-w-5xl px-6 pb-20">
+      <section className="mx-auto w-full max-w-5xl px-6 pb-14">
         <div className="w-full text-left text-purple-900">
           <h2 className="text-2xl font-semibold tracking-tight">About</h2>
           <p className="mt-4 text-base leading-7 text-purple-900/80">
