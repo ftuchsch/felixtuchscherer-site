@@ -166,11 +166,138 @@ export default function Home() {
       </main>
 
       <section className="mx-auto w-full max-w-5xl px-6 pb-20">
-        <div className="max-w-3xl text-left text-purple-900">
+        <div className="w-full text-left text-purple-900">
           <h2 className="text-2xl font-semibold tracking-tight">About</h2>
           <p className="mt-4 text-base leading-7 text-purple-900/80">
-            Work in progress!
+            Hey! I'm Felix. Born in France, grew up in California, and now I study in Boston.
+            I'm interested in the intersection between ML and biology. With all of our
+            advancements in AI, I believe a lot of it can be used to unravel the arcana of
+            biology. Cancer, aging, genetic disorders, and many more diseases will likely
+            see treatments or cures within the next few decades because of this. 
+            <strong> I yearn to be at that forefront.</strong> 
           </p>
+          <p className="mt-4 text-base leading-7 text-purple-900/80">
+            In my free time, I train Brazilian Jiu-Jitsu (4 stripe white belt; hopefully
+            blue soon!!!), read fiction (Brandon Sanderson is my favorite author), and
+            explore the world. <strong> Life is ephemeral, I hope to relish it. </strong>
+          </p>
+        </div>
+      </section>
+
+      <section className="mx-auto w-full max-w-5xl px-6 pb-20">
+        <div className="max-w-3xl text-left text-purple-900">
+          <h2 className="text-2xl font-semibold tracking-tight">Experience</h2>
+          <div className="mt-6 space-y-10">
+            <article>
+              <h3 className="text-xl font-semibold">
+                <a
+                  href="https://sites.google.com/bu.edu/joseph-mccarthy-group"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 transition-colors hover:text-blue-700"
+                >
+                  Joseph-McCarthy Group - BU College of Engineering
+                </a>
+              </h3>
+              <p className="mt-1 text-base font-semibold text-purple-900/85">
+                Research Assistant
+                <span className="mx-3 font-semibold">&bull;</span>
+                Boston, MA
+                <span className="mx-3 font-semibold">&bull;</span>
+                Nov 2024 - Present
+              </p>
+              <ul className="mt-4 list-disc space-y-1 pl-8 text-base leading-8 text-purple-900/90">
+                <li>
+                  Ran AlphaFold3 multiseed structure prediction for a set of 16
+                  proteins, identifying patterns in cryptic site formation
+                </li>
+                <li>
+                  Built python workflows with Biopython and NumPy to analyze AF3
+                  predictions for over 24,000 structures, enabling large-scale
+                  benchmarking of AF3 prediction accuracy
+                </li>
+                <li>
+                  Designed ligand RMSD script leveraging RDKit SMARTS mappings
+                  to resolve symmetry-related ambiguities, reducing mismapped
+                  cases by 12.5%
+                </li>
+              </ul>
+            </article>
+
+            <article>
+              <h3 className="text-xl font-semibold">
+                <a
+                  href="https://basilmenu.ai/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 transition-colors hover:text-blue-700"
+                >
+                  Basil
+                </a>
+              </h3>
+              <p className="mt-1 text-base font-semibold text-purple-900/85">
+                Chief Technology Officer
+                <span className="mx-3 font-semibold">&bull;</span>
+                Boston, MA
+                <span className="mx-3 font-semibold">&bull;</span>
+                Feb 2025 - Present
+              </p>
+              <ul className="mt-4 list-disc space-y-1 pl-8 text-base leading-8 text-purple-900/90">
+                <li>
+                  Lead 100% of development, building a full-stack restaurant
+                  dish recommendation engine with Next.js and TypeScript,
+                  piloting with Xenia Greek Hospitality as our initial launch
+                  partner
+                </li>
+                <li>
+                  Developed an NLP pipeline using OpenAI API and serverless
+                  functions, transforming user entered dietary restriction text
+                  into filtered restaurant menu in under 400ms
+                </li>
+                <li>
+                  Architected Supabase/PostgreSQL schema for dishes,
+                  ingredients, and cross-contamination links, enabling precise
+                  allergy-aware filtering across 100+ menu items per restaurant
+                </li>
+              </ul>
+            </article>
+
+            <article>
+              <h3 className="text-xl font-semibold">
+                <a
+                  href="https://leshlab.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 transition-colors hover:text-blue-700"
+                >
+                  Leshchiner Lab - BU Department of Computational Biomedicine
+                </a>
+              </h3>
+              <p className="mt-1 text-base font-semibold text-purple-900/85">
+                Research Assistant
+                <span className="mx-3 font-semibold">&bull;</span>
+                Boston, MA
+                <span className="mx-3 font-semibold">&bull;</span>
+                Sep 2023 - Nov 2024
+              </p>
+              <ul className="mt-4 list-disc space-y-1 pl-8 text-base leading-8 text-purple-900/90">
+                <li>
+                  Conducted high-accuracy basecalling, sequencing, and multi-step
+                  DNA library integration using Dorado
+                </li>
+                <li>
+                  Developed Python bioinformatics pipeline for Nanopore FASTQ
+                  files, extracting read metrics (length, barcode
+                  classification, AT/CG content) for statistical analysis (mean,
+                  median, std, etc)
+                </li>
+                <li>
+                  Utilized Seaborn and Matplotlib to build visualization suite
+                  for evaluating sequencing quality and filtering reads
+                </li>
+              </ul>
+            </article>
+          </div>
         </div>
       </section>
     </div>
