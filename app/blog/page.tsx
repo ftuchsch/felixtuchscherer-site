@@ -12,7 +12,7 @@ export default function BlogPage() {
         </Link>
         <h1 className="mt-6 text-3xl font-semibold tracking-tight">Blog</h1>
         <p className="mt-3 text-base text-purple-900/80">
-          Blog posts coming soon.
+          Would like to make blog posts one day! So, I am adding the framework now :)
         </p>
       </div>
     </main>

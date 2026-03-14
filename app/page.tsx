@@ -173,13 +173,13 @@ export default function Home() {
             I'm interested in the intersection between ML and biology. With all of our
             advancements in AI, I believe a lot of it can be used to unravel the arcana of
             biology. Cancer, aging, genetic disorders, and many more diseases will likely
-            see treatments or cures within the next few decades because of this. 
+            see treatments or cures within the next few decades. 
             <strong> I yearn to be at that forefront.</strong> 
           </p>
           <p className="mt-4 text-base leading-7 text-purple-900/80">
             In my free time, I train Brazilian Jiu-Jitsu (4 stripe white belt; hopefully
-            blue soon!!!), read fiction (Brandon Sanderson is my favorite author), and
-            explore the world. <strong> Life is ephemeral, I hope to relish it. </strong>
+            blue soon!!), read fiction (Brandon Sanderson is my favorite author), and
+            explore the world. <strong> Life is ephemeral, and I hope to relish it. </strong>
           </p>
         </div>
       </section>
