@@ -1,5 +1,38 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Beginner’s guide to OpenClaw",
+  description:
+    "OpenClaw can save time, effort, and money by acting as an AI assistant that takes actions for you. Here is a beginner-friendly walkthrough for getting it running with Telegram and Gmail.",
+  alternates: {
+    canonical: "/blog/begginers-guide-to-openclaw",
+  },
+  openGraph: {
+    title: "Beginner’s guide to OpenClaw",
+    description:
+      "OpenClaw can save time, effort, and money by acting as an AI assistant that takes actions for you. Here is a beginner-friendly walkthrough for getting it running with Telegram and Gmail.",
+    url: "https://www.felixtuchscherer.com/blog/begginers-guide-to-openclaw",
+    siteName: "Felix Tuchscherer",
+    type: "article",
+    images: [
+      {
+        url: "https://www.felixtuchscherer.com/blog/lavendar.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Beginner’s guide to OpenClaw",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Beginner’s guide to OpenClaw",
+    description:
+      "OpenClaw can save time, effort, and money by acting as an AI assistant that takes actions for you. Here is a beginner-friendly walkthrough for getting it running with Telegram and Gmail.",
+    images: ["https://www.felixtuchscherer.com/blog/lavendar.jpg"],
+  },
+};
 
 export default function BegginersGuideToOpenclawPage() {
   return (
@@ -325,7 +358,7 @@ export default function BegginersGuideToOpenclawPage() {
         </ul>
         <p className="mt-3 text-base leading-7 text-purple-900/85">
           Note that you can keep talking to it in the terminal, or you can switch to Telegram! To communicate in
-          Telegram, simply message your bot on Telegram (which you named in Step 4) "/start". Then, it will send you
+          Telegram, simply message your bot on Telegram (which you named in Step 4) &quot;/start&quot;. Then, it will send you
           the exact command, which you just enter into OpenClaw. Once you have linked Telegram and OpenClaw, you can 
           communicate solely through Telegram.
         </p>
