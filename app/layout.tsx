@@ -38,7 +38,8 @@ export const metadata: Metadata = {
     images: ["/headshot.png"],
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: "/icon.svg",
+    shortcut: "/icon.svg",
   },
 };
 

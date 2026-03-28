@@ -194,7 +194,7 @@ export default function Home() {
                   href="https://sites.google.com/bu.edu/joseph-mccarthy-group"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-600 transition-colors hover:text-blue-700"
+                  className="text-blue-600 underline underline-offset-2 transition-colors hover:text-blue-700"
                 >
                   Joseph-McCarthy Group - BU College of Engineering
                 </a>
@@ -230,7 +230,7 @@ export default function Home() {
                   href="https://basilmenu.ai/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-600 transition-colors hover:text-blue-700"
+                  className="text-blue-600 underline underline-offset-2 transition-colors hover:text-blue-700"
                 >
                   Basil
                 </a>
@@ -268,7 +268,7 @@ export default function Home() {
                   href="https://leshlab.org/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-600 transition-colors hover:text-blue-700"
+                  className="text-blue-600 underline underline-offset-2 transition-colors hover:text-blue-700"
                 >
                   Leshchiner Lab - BU Department of Computational Biomedicine
                 </a>
@@ -298,6 +298,22 @@ export default function Home() {
               </ul>
             </article>
           </div>
+        </div>
+      </section>
+
+      <section className="mx-auto w-full max-w-5xl px-6 pb-20">
+        <div className="max-w-3xl text-left text-purple-900">
+          <h2 className="text-2xl font-semibold tracking-tight">Blogs</h2>
+          <ul className="mt-6 space-y-4">
+            <li>
+              <Link
+                href="/blog/begginers-guide-to-openclaw"
+                className="text-lg font-medium text-blue-600 underline underline-offset-2 transition-colors hover:text-blue-700"
+              >
+                Begginers guide to Openclaw
+              </Link>
+            </li>
+          </ul>
         </div>
       </section>
     </div>
