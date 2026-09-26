@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import SiteFooter from "../../components/SiteFooter";
+import SiteHeader from "../../components/SiteHeader";
 
 export const metadata: Metadata = {
   title: "Beginner’s guide to OpenClaw",
@@ -36,18 +38,22 @@ export const metadata: Metadata = {
 
 export default function BegginersGuideToOpenclawPage() {
   return (
-    <main className="min-h-screen bg-white px-6 py-16">
-      <article className="mx-auto w-full max-w-3xl text-purple-900">
-        <Link
-          href="/blog"
-          className="text-sm font-medium transition-opacity hover:opacity-70"
-        >
-          Blog
-        </Link>
-
-        <h1 className="mt-6 text-4xl font-semibold tracking-tight">Beginner’s guide to OpenClaw</h1>
-        <p className="mt-2 text-sm text-purple-900/60">March 28, 2026</p>
-        <figure className="mt-5">
+    <div className="site-shell">
+      <SiteHeader current="writing" />
+      <main className="article-page">
+      <article className="article-shell">
+        <header className="article-header">
+          <Link className="article-back" href="/blog">
+            ← All writing
+          </Link>
+          <p className="eyebrow">Guide · AI tools</p>
+          <h1>Beginner’s guide to OpenClaw</h1>
+          <div className="article-header__meta">
+            <time dateTime="2026-03-28">March 28, 2026</time>
+            <span>12 minute read</span>
+          </div>
+        </header>
+        <figure className="article-lead-image">
           <Image
             src="/blog/lavendar.jpg"
             alt="Lavender field"
@@ -390,6 +396,8 @@ export default function BegginersGuideToOpenclawPage() {
           purposeful.
         </p>
       </article>
-    </main>
+      </main>
+      <SiteFooter />
+    </div>
   );
 }

@@ -14,13 +14,16 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.felixtuchscherer.com"),
-  title: "Felix Tuchscherer",
+  title: {
+    default: "Felix Tuchscherer — Computational Biology",
+    template: "%s — Felix Tuchscherer",
+  },
   description:
-    "Boston University student focused on computer science, biology, and machine learning.",
+    "Felix Tuchscherer writes and works at the intersection of computational biology, protein modeling, and machine learning.",
   openGraph: {
-    title: "Felix Tuchscherer",
+    title: "Felix Tuchscherer — Computational Biology",
     description:
-      "Boston University student focused on computer science, biology, and machine learning.",
+      "Writing and research at the intersection of computational biology, protein modeling, and machine learning.",
     url: "https://www.felixtuchscherer.com",
     siteName: "Felix Tuchscherer",
     images: [
@@ -32,9 +35,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Felix Tuchscherer",
+    title: "Felix Tuchscherer — Computational Biology",
     description:
-      "Boston University student focused on computer science, biology, and machine learning.",
+      "Writing and research at the intersection of computational biology, protein modeling, and machine learning.",
     images: ["/headshot.png"],
   },
   icons: {
@@ -51,7 +54,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable}`}
       >
         {children}
       </body>
