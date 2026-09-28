@@ -112,11 +112,15 @@ export default function Home() {
             />
           </div>
           <div className="about-section__body">
-            <h2 id="about-heading">Curious about what makes living systems work.</h2>
+            <h2 id="about-heading">Driven to build tools that make biology more understandable</h2>
             <p>
-              In my free time, I train Brazilian Jiu-Jitsu (4 stripe white belt; hopefully
-              blue soon!!), read fiction (Brandon Sanderson is my favorite author), and
-              explore the world. <strong> Life is ephemeral, and I hope to relish it. </strong>
+              In my free time, I have been training Brazilian Jiu-Jitsu for almost 2 years.
+              I also love reading fiction, anything from Brandon Sanderson&apos;s Stormlight
+              Archives to Fyodor Dostoevsky&apos;s Crime and Punishment. I love traveling and
+              eating and something I have recently gotten into is running! I spontaneously
+              decided to sign up for the Cambridge half-marathon and have been running twice
+              a week for about 2 months now!{" "}
+              <strong>Life is ephemeral, and I hope to appreciate it as much as possible.</strong>
             </p>
           </div>
         </section>
