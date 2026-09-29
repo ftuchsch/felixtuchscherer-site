@@ -126,8 +126,8 @@ export default function GettingStartedOnPhdApplicationsPage() {
           </p>
           <p>
             Even if you don’t get it, I think the application itself is worth doing! It forces you to start thinking
-            about your research interests, future goals, and why you actually want a PhD—all things you’ll need to
-            figure out for your applications anyway.
+            about your research interests, future goals, and why you actually want a PhD. These are all things you’ll
+            need to figure out for your applications anyway.
           </p>
           <p>
             I learned about this myself last week, and a good guide I’ve been using is{" "}
