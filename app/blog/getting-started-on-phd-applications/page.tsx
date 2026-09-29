@@ -20,11 +20,20 @@ export const metadata: Metadata = {
     siteName: "Felix Tuchscherer",
     type: "article",
     publishedTime: "2026-09-29",
+    images: [
+      {
+        url: "https://www.felixtuchscherer.com/site-preview.png",
+        width: 1200,
+        height: 630,
+        alt: "Felix Tuchscherer’s homepage featuring the PhD applications article",
+      },
+    ],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title,
     description,
+    images: ["https://www.felixtuchscherer.com/site-preview.png"],
   },
 };
 

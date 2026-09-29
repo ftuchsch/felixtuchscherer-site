@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -28,7 +29,10 @@ export const metadata: Metadata = {
     siteName: "Felix Tuchscherer",
     images: [
       {
-        url: "/headshot.png",
+        url: "/site-preview.png",
+        width: 1200,
+        height: 630,
+        alt: "Felix Tuchscherer’s homepage",
       },
     ],
     type: "website",
@@ -38,7 +42,7 @@ export const metadata: Metadata = {
     title: "Felix Tuchscherer — Computational Biology",
     description:
       "Writing and research at the intersection of computational biology, protein modeling, and machine learning.",
-    images: ["/headshot.png"],
+    images: ["/site-preview.png"],
   },
   icons: {
     icon: "/logo.png",
@@ -53,10 +57,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable}`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
