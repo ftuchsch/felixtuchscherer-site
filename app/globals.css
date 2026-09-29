@@ -1241,7 +1241,6 @@ summary:focus-visible {
 .article-shell > h3 {
   margin: 76px 0 20px;
   padding-top: 24px;
-  border-top: 1px solid var(--line-strong);
   color: var(--ink);
   font-size: clamp(1.8rem, 3.2vw, 2.7rem);
   font-weight: 480;
@@ -1309,6 +1308,16 @@ summary:focus-visible {
 
 .article-shell > figure:not(.article-lead-image) {
   margin: 34px 0 42px;
+}
+
+.article-divider {
+  margin: 64px 0 46px;
+  border: 0;
+}
+
+.article-shell > h3,
+.article-divider {
+  border-top: 1px solid var(--line-strong);
 }
 
 @media (max-width: 980px) {

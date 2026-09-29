@@ -33,18 +33,19 @@ export default function Home() {
             <article className="home-writing-card" aria-labelledby="featured-writing-title">
               <div className="home-writing-card__topline">
                 <p className="section-label">01 / Featured writing</p>
-                <time dateTime="2026-03-28">03.28.26</time>
+                <time dateTime="2026-09-29">09.29.26</time>
               </div>
               <h2 id="featured-writing-title">
-                <Link href="/blog/begginers-guide-to-openclaw">
-                  Beginner’s guide to OpenClaw
+                <Link href="/blog/getting-started-on-phd-applications">
+                  Getting Started on PhD Applications
                 </Link>
               </h2>
               <p>
-                OpenClaw can save time, effort, and money by acting as an AI assistant that takes actions for you. Here is a beginner-friendly walkthrough for getting it running with Telegram and Gmail.
+                Three practical ways to make PhD applications feel less intimidating: build a focused program list,
+                reflect on what excites you, and consider the NSF GRFP.
               </p>
               <div className="home-writing-card__links">
-                <Link className="story-link" href="/blog/begginers-guide-to-openclaw">
+                <Link className="story-link" href="/blog/getting-started-on-phd-applications">
                   Read essay <span aria-hidden="true">→</span>
                 </Link>
                 <Link className="story-link" href="/blog">
