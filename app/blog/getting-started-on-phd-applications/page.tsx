@@ -147,7 +147,7 @@ export default function GettingStartedOnPhdApplicationsPage() {
             >
               2027 GRFP competition
             </a>
-            , reference letters are due October 16 at 8:00 p.m. Eastern, and applications are due October 19–23
+            , reference letters are due October 16 at 8:00 p.m. EST, and applications are due October 19-23
             depending on your field. Tie your shoes and get moving!!!
           </p>
         </article>
