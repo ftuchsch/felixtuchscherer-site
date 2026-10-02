@@ -2,9 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import ExperienceMap from "./components/ExperienceMap";
 import LandingFade from "./components/LandingFade";
+import ProjectMap from "./components/ProjectMap";
 import SiteFooter from "./components/SiteFooter";
 import SiteHeader from "./components/SiteHeader";
 import { experiences } from "./data/experiences";
+import { projects } from "./data/projects";
 
 export default function Home() {
   return (
@@ -125,6 +127,46 @@ export default function Home() {
             </p>
           </div>
         </section>
+
+        <section className="projects-section section-wrap" id="projects" aria-labelledby="projects-heading">
+          <div className="projects-section__heading">
+            <p className="section-label">05 / Projects</p>
+            <h2 id="projects-heading">Projects</h2>
+          </div>
+          <p className="projects-section__preface">
+            Admittedly, I can&apos;t say I&apos;ve built only professional projects, but through each
+            one I&apos;ve followed an interest and truly learned new skills.
+          </p>
+          <ProjectMap />
+          <div className="project-details">
+            <p className="protein-map__credit">
+              <span className="protein-map__credit-line">
+                Molecule of the Month © David S. Goodsell and {" "}
+                <a href="https://www.rcsb.org/" target="_blank" rel="noreferrer">RCSB PDB</a>, licensed under {" "}
+                <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer">CC-BY-4.0</a>
+              </span>
+            </p>
+            <ol className="project-list">
+              {projects.map((project, index) => (
+                <li className="project-row" id={project.id} key={project.id}>
+                  <span className="project-row__number" aria-hidden="true">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                  <div className="project-row__title">
+                    <p>{project.category}</p>
+                    <h3>
+                      <a href={project.href} target="_blank" rel="noreferrer">
+                        {project.title} <span aria-hidden="true">↗</span>
+                      </a>
+                    </h3>
+                  </div>
+                  <div className="project-row__description">{project.description}</div>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </section>
+
       </main>
 
       <SiteFooter />

@@ -19,8 +19,9 @@ export default function SiteHeader({ current }: SiteHeaderProps) {
           >
             Writing
           </Link>
-          <Link href="/#experience">Experience</Link>
+          <Link href="/#experience-map">Experience</Link>
           <Link href="/#about">About</Link>
+          <Link href="/#projects">Projects</Link>
           <a href="mailto:felix.tuchscherer@gmail.com">Contact</a>
         </nav>
       </div>
